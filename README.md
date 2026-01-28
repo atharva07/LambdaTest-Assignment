@@ -27,8 +27,24 @@ The framework demonstrates real-world automation practices such as:
 
 ## Project Structure
 
-
-
+```text
+amazonAssignment/
+│
+├── basePages/
+│ └── BuyDeviceFlow.py # Page Object for Amazon product flow
+│
+├── test_cases/
+│ └── test_amazon_test_cases.py # PyTest test cases
+│
+├── utilities/
+│ ├── get_test_data.py # Test data provider
+│ ├── read_properties.py # Configuration reader
+│ └── custom_logger.py # Logging utility
+│
+├── conftest.py # PyTest fixtures (browser setup & teardown)
+├── requirements.txt # Project dependencies
+└── README.md
+```
 
 ---
 
@@ -60,6 +76,6 @@ Tests are executed using PyTest `@parametrize`.
 ## How to Run Tests
 1. Activate the venv
 2. pip install -r requirements.txt
-3. pytest -v test_cases/test_amazon_test_cases.py
+3. pytest -v -n 2 test_cases/test_amazon_test_cases.py (**For Parallel Test Execution**)
 
-# Check the logs in termianl for monitoring the tests
+# Check the logs in terminal for monitoring the tests
