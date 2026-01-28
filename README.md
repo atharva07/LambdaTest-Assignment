@@ -79,3 +79,6 @@ Tests are executed using PyTest `@parametrize`.
 3. pytest -v -n 2 test_cases/test_amazon_test_cases.py (**For Parallel Test Execution**)
 
 # Check the logs in terminal for monitoring the tests
+## 📸 LambdaTest Execution Screenshot
+
+![LambdaTest Dashboard](test_data/img.png)
